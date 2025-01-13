@@ -9,8 +9,8 @@
   - **Functional**: This artifact is documented for use. It can generate similar evaluation results as declared in the paper. It contains all components related to the paper. There are scripts to run the benchmarks and generate the results in the associated paper.
   - **Reusable**: Source code is provided so it can be reused and repurposed.
 ## 2 Provenience
-- Link to artifact
-- Link to paper: [https://arxiv.org/abs/2412.06102](https://arxiv.org/abs/2412.06102)
+- Link to artifact: [https://doi.org/10.5281/zenodo.14635722](https://doi.org/10.5281/zenodo.14635722)
+- Link to paper: [https://doi.org/10.48550/arXiv.2412.06102](https://doi.org/10.48550/arXiv.2412.06102)
 
 ## 3 Data
 Our benchmarks are collected from four datasets
