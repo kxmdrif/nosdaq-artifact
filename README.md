@@ -7,7 +7,7 @@
 - Badges to earn:
   - **Available**: It is public accessable in Zenodo and there is link to access to it.
   - **Functional**: This artifact is documented for use. It can generate similar evaluation results as declared in the paper. It contains all components related to the paper. There are scripts to run the benchmarks and generate the results in the associated paper.
-  - **Reusable**: Sode is provided so it can be reused and repurposed.
+  - **Reusable**: Source code is provided so it can be reused and repurposed.
 ## 2 Provenience
 - Link to artifact
 - Link to paper: [https://arxiv.org/abs/2412.06102](https://arxiv.org/abs/2412.06102)
