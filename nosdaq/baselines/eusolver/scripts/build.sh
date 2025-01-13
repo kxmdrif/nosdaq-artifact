@@ -18,6 +18,7 @@ REBUILD_LOCAL_Z3=no
 LOCAL_Z3_ROOT="$EUSOLVER_ROOT"/thirdparty/z3
 
 # Build libeusolver
+mkdir -p "$EUSOLVER_ROOT"/thirdparty/libeusolver/build
 pushd "$EUSOLVER_ROOT"/thirdparty/libeusolver/build
 cmake ..
 make
