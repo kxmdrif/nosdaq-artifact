@@ -78,6 +78,7 @@ Back to the project directory, and follow the instructions to get the plots
 in [fig-ablation-study.pdf](fig-ablation-study.pdf) and [fig-baseline.pdf](fig-baseline.pdf).
 
 ```bash
+pip3 install -r requirements.txt
 python3 plot.py
 ```
 

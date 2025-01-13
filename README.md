@@ -106,6 +106,7 @@ Note:If you skipped the collection size impact experiment. You will not get rela
 
 In the `nosdaq` directory, run
 ```bash
+pip3 install -r requirements.txt
 python3 plot.py
 ```
 This might take around **30 seconds** or more especially if you finished the collection size impact experiment.

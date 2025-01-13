@@ -257,6 +257,6 @@ def collection_size_exp():
 
 
 if __name__ == "__main__":
-    # ablation_study()
-    # baseline()
+    ablation_study()
+    baseline()
     collection_size_exp()
