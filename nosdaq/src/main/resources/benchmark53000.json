@@ -1,0 +1,1 @@
+{"name": "benchmark53000", "schema": {}, "constants": ["1"], "examples": [{"input": [{"_id": 1, "title": "some title", "publicationDate": "00-00-0000", "editions": [{"editionId": 1, "editionName": "aa"}, {"editionId": 2, "editionName": "bb"}]}], "output": []}]}

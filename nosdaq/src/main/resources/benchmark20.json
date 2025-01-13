@@ -1,0 +1,136 @@
+{
+  "name": "benchmark20",
+  "schema": {
+    "input": {
+      "_id": "STRING",
+      "userId": "STRING",
+      "name": "STRING"
+    },
+    "output": {
+      "count": "INT",
+      "userId": "STRING",
+      "name": "STRING"
+    }
+  },
+  "constants": ["1"],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "645b050c452474023d99b1d1",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d2",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d3",
+          "userId": "2",
+          "name": "Ben"
+        },
+        {
+          "_id": "645b050c452474023d99b1d4",
+          "userId": "2",
+          "name": "Ben"
+        },
+        {
+          "_id": "645b050c452474023d99b1d5",
+          "userId": "3",
+          "name": "Ryan"
+        }
+      ],
+      "output": [
+        {
+          "count": 2,
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "count": 2,
+          "userId": "2",
+          "name": "Ben"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645b050c452474023d99b1d1",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d2",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d5",
+          "userId": "3",
+          "name": "Ryan"
+        },
+        {
+          "_id": "645b050c452474023d99b1d6",
+          "userId": "3",
+          "name": "Ryan"
+        }
+      ],
+      "output": [
+        {
+          "count": 2,
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "count": 2,
+          "userId": "3",
+          "name": "Ryan"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645b050c452474023d99b1d1",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d2",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d7",
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "_id": "645b050c452474023d99b1d5",
+          "userId": "3",
+          "name": "Ryan"
+        },
+        {
+          "_id": "645b050c452474023d99b1d6",
+          "userId": "3",
+          "name": "Ryan"
+        }
+      ],
+      "output": [
+        {
+          "count": 3,
+          "userId": "1",
+          "name": "Brian"
+        },
+        {
+          "count": 2,
+          "userId": "3",
+          "name": "Ryan"
+        }
+      ]
+    }
+  ]
+}

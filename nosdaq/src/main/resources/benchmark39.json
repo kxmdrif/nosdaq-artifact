@@ -1,0 +1,89 @@
+{
+    "name": "benchmark39",
+    "schema": {
+        "input": {
+            "_id": "INT",
+            "specs": "OBJECT",
+            "specs.doors": "INT",
+            "specs.wheels": "INT",
+            "type": "STRING"
+        },
+        "output": {
+            "_id": "INT",
+            "specs": "OBJECT",
+            "specs.doors": "INT",
+            "specs.wheels": "INT",
+            "sub_abs": "INT",
+            "type": "STRING"
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": 1,
+                    "specs": {
+                        "doors": 4,
+                        "wheels": 4
+                    },
+                    "type": "car"
+                },
+                {
+                    "_id": 2,
+                    "specs": {
+                        "doors": 0,
+                        "wheels": 2
+                    },
+                    "type": "motorcycle"
+                },
+                {
+                    "_id": 3,
+                    "type": "jet ski"
+                },
+                {
+                    "_id": 4,
+                    "specs": {
+                        "doors": 2,
+                        "wheels": 0
+                    },
+                    "type": "motorcycle"
+                }
+            ],
+            "output": [
+                {
+                    "_id": 1,
+                    "specs": {
+                        "doors": 4,
+                        "wheels": 4
+                    },
+                    "sub_abs": 0,
+                    "type": "car"
+                },
+                {
+                    "_id": 2,
+                    "specs": {
+                        "doors": 0,
+                        "wheels": 2
+                    },
+                    "sub_abs": 2,
+                    "type": "motorcycle"
+                },
+                {
+                    "_id": 3,
+                    "sub_abs": null,
+                    "type": "jet ski"
+                },
+                {
+                    "_id": 4,
+                    "specs": {
+                        "doors": 2,
+                        "wheels": 0
+                    },
+                    "sub_abs": 2,
+                    "type": "motorcycle"
+                }
+            ]
+        }
+    ]
+}

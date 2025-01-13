@@ -1,0 +1,80 @@
+{
+    "name": "benchmark47",
+    "schema": {
+        "input": {
+            "_id": "STRING",
+            "items": "OBJECT_ARRAY",
+            "items.name": "STRING",
+            "items.tags": "STRING_ARRAY",
+            "items.price": "DOUBLE",
+            "items.quantity": "INT"
+        },
+        "output": {
+            "_id": "STRING",
+            "totalQty": "INT"
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": "1",
+                    "items": [
+                        {
+                            "name": "pens",
+                            "tags": ["writing", "office", "school", "stationary"],
+                            "price": 12,
+                            "quantity": 5
+                        },
+                        {
+                            "name": "envelopes",
+                            "tags": ["stationary", "office"],
+                            "price": 19.95,
+                            "quantity": 8
+                        }
+                    ]
+                },
+                {
+                    "_id": "2",
+                    "items": [
+                        {
+                            "name": "laptop",
+                            "tags": ["office", "electronics"],
+                            "price": 800,
+                            "quantity": 1
+                        },
+                        {
+                            "name": "notepad",
+                            "tags": ["stationary", "school"],
+                            "price": 14.95,
+                            "quantity": 3
+                        }
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "_id": "writing",
+                    "totalQty": 5
+                },
+                {
+                    "_id": "school",
+                    "totalQty": 8
+                },
+                {
+                    "_id": "office",
+                    "totalQty": 14
+                },
+                {
+                    "_id": "electronics",
+                    "totalQty": 1
+                },
+                {
+                    "_id": "stationary",
+                    "totalQty": 16
+                }
+            ]
+        }
+    ]
+}

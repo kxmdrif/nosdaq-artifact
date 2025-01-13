@@ -1,0 +1,110 @@
+{"index": 1, "time": 0.0865, "program": "(CheckEquiv (Project (Match (Init data) (SizeEq \"type\" \"2\")) (SingletonInPath \"name\")))"}
+{"index": 2, "time": 0.0338, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"cities.name\" \"!=\" \"null\")))"}
+{"index": 3, "time": 7.6774, "program": "(CheckEquiv (Match (Init data) (And (LogicCmp \"created_at.$date\" \">\" \"2010-04-29T00:00:00.000Z\") (LogicCmp \"created_at.$date\" \"<\" \"2010-05-01T00:00:00.000Z\"))))"}
+{"index": 4, "time": 93.217, "program": "(CheckEquiv (Group (Match (Init data) (LogicCmp \"orderDate.$date\" \"<\" \"2021-02-25T10:03:46.000Z\")) (SingletonInPath \"userid\") (PairOutAttrCount \"clicks\")))"}
+{"index": 5, "time": 23.1812, "program": "(CheckEquiv (Match (AddFields (Init data) (PairOutPathExpr \"size_of_name\" (Size \"name\"))) (LogicCmp \"size_of_name\" \"!=\" \"1\")))"}
+{"index": 6, "time": 27.5218, "program": "(CheckEquiv (Match (AddFields (Init data) (PairOutPathExpr \"SSCEXPEND_count\" (Size \"SSCEXPEND\"))) (SizeEq \"SSCEXPEND\" \"2\")))"}
+{"index": 7, "time": 0.0502, "program": "(CheckEquiv (Project (Init data) (SingletonInPath \"item\")))"}
+{"index": 8, "time": 0.0663, "program": "(CheckEquiv (Match (Init data) (Not (SizeEq \"pictures\" \"0\"))))"}
+{"index": 9, "time": 300, "program": null}
+{"index": 10, "time": 300, "program": null}
+{"index": 11, "time": 0.0615, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"qty\" \"=\" \"20\")))"}
+{"index": 12, "time": 300, "program": null}
+{"index": 13, "time": 300, "program": null}
+{"index": 14, "time": 0.0522, "program": "(CheckEquiv (Group (Init data) (SingletonInPath \"province\") (PairOutAttrCount \"count\")))"}
+{"index": 15, "time": 300, "program": null}
+{"index": 16, "time": 300, "program": null}
+{"index": 17, "time": 300, "program": null}
+{"index": 18, "time": 300, "program": null}
+{"index": 19, "time": 0.0628, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"item.name\" \"=\" \"ab\")))"}
+{"index": 20, "time": 300, "program": null}
+{"index": 21, "time": 300, "program": null}
+{"index": 22, "time": 44.3972, "program": "(CheckEquiv (Match (Init data) (And (LogicCmp \"end_date.$date\" \">\" \"2023-08-25T00:00:00.000Z\") (LogicCmp \"start_date.$date\" \"<\" \"2023-08-25T00:00:00.000Z\"))))"}
+{"index": 23, "time": 0.0674, "program": "(CheckEquiv (Match (Init data) (Exists \"ln\")))"}
+{"index": 24, "time": 0.1089, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"tags\" \"=\" \"B\")))"}
+{"index": 25, "time": 0.1052, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"post\" \"!=\" \"\")))"}
+{"index": 26, "time": 0.0929, "program": "(CheckEquiv (Match (Init data) (LogicCmp \"quantity\" \">\" \"20\")))"}
+{"index": 27, "time": 0.1075, "program": "(CheckEquiv (Match (Init data) (SizeEq \"players\" \"10\")))"}
+{"index": 28, "time": 300, "program": null}
+{"index": 29, "time": 0.0331, "program": "(CheckEquiv (Match (Init data) (Exists \"saffron\")))"}
+{"index": 30, "time": 0.0484, "program": "(CheckEquiv (Match (Init data) (Not (Exists \"saffron\"))))"}
+{"index": 31, "time": 300, "program": null}
+{"index": 32, "time": 300, "program": null}
+{"index": 33, "time": 300, "program": null}
+{"index": 34, "time": 300, "program": null}
+{"index": 35, "time": 0.0574, "program": "(CheckEquiv (AddFields (Init data) (PairOutPathExpr \"ceilingValue\" (Ceil (SingletonExpr \"value\")))))"}
+{"index": 36, "time": 0.2652, "program": "(CheckEquiv (Group (Init data) (SingletonInPath \"item\") (PairOutAttrAgg \"minQuantity\" \"Min\" \"quantity\")))"}
+{"index": 37, "time": 300, "program": null}
+{"index": 38, "time": 300, "program": null}
+{"index": 39, "time": 300, "program": null}
+{"index": 40, "time": 300, "program": null}
+{"index": 41, "time": 300, "program": null}
+{"index": 42, "time": 300, "program": null}
+{"index": 43, "time": 0.1333, "program": "(CheckEquiv (Lookup (Init data) \"item\" \"benchmark43_inventory\" \"benchmark43_inventory.sku\" \"inventory_docs\"))"}
+{"index": 44, "time": 300, "program": null}
+{"index": 45, "time": 300, "program": null}
+{"index": 46, "time": 300, "program": null}
+{"index": 47, "time": 300, "program": null}
+{"index": 48, "time": 300, "program": null}
+{"index": 49, "time": 300, "program": null}
+{"index": 50, "time": 300, "program": null}
+{"index": 51, "time": 300, "program": null}
+{"index": 52, "time": 300, "program": null}
+{"index": 53, "time": 300, "program": null}
+{"index": 54, "time": 300, "program": null}
+{"index": 55, "time": 300, "program": null}
+{"index": 56, "time": 300, "program": null}
+{"index": 57, "time": 300, "program": null}
+{"index": 58, "time": 300, "program": null}
+{"index": 59, "time": 300, "program": null}
+{"index": 60, "time": 207.4218, "program": "(CheckEquiv (Group (Unwind (Init data) \"context_annotations\") (SingletonInPath \"context_annotations.domain.id\") (PairOutAttrCount \"domainCount\")))"}
+{"index": 61, "time": 300, "program": null}
+{"index": 62, "time": 300, "program": null}
+{"index": 63, "time": 300, "program": null}
+{"index": 64, "time": 300, "program": null}
+{"index": 65, "time": 300, "program": null}
+{"index": 66, "time": 300, "program": null}
+{"index": 67, "time": 300, "program": null}
+{"index": 68, "time": 300, "program": null}
+{"index": 69, "time": 300, "program": null}
+{"index": 70, "time": 300, "program": null}
+{"index": 71, "time": 300, "program": null}
+{"index": 72, "time": 300, "program": null}
+{"index": 73, "time": 300, "program": null}
+{"index": 74, "time": 300, "program": null}
+{"index": 75, "time": 300, "program": null}
+{"index": 76, "time": 300, "program": null}
+{"index": 77, "time": 300, "program": null}
+{"index": 78, "time": 300, "program": null}
+{"index": 79, "time": 300, "program": null}
+{"index": 80, "time": 300, "program": null}
+{"index": 81, "time": 300, "program": null}
+{"index": 82, "time": 300, "program": null}
+{"index": 83, "time": 300, "program": null}
+{"index": 84, "time": 300, "program": null}
+{"index": 85, "time": 1.327, "program": "(CheckEquiv (Project (Match (Init data) (SizeEq \"annotations\" \"2\")) (SingletonInPath \"content\")))"}
+{"index": 86, "time": 6.1938, "program": "(CheckEquiv (Group (Unwind (Init data) \"annotations\") (SingletonInPath \"annotations.tag_name\") (PairOutAttrCount \"count\")))"}
+{"index": 87, "time": 300, "program": null}
+{"index": 88, "time": 300, "program": null}
+{"index": 89, "time": 300, "program": null}
+{"index": 90, "time": 300, "program": null}
+{"index": 91, "time": 300, "program": null}
+{"index": 92, "time": 300, "program": null}
+{"index": 93, "time": 300, "program": null}
+{"index": 94, "time": 300, "program": null}
+{"index": 95, "time": 300, "program": null}
+{"index": 96, "time": 300, "program": null}
+{"index": 97, "time": 300, "program": null}
+{"index": 98, "time": 300, "program": null}
+{"index": 99, "time": 300, "program": null}
+{"index": 100, "time": 300, "program": null}
+{"index": 101, "time": 300, "program": null}
+{"index": 102, "time": 300, "program": null}
+{"index": 103, "time": 300, "program": null}
+{"index": 104, "time": 300, "program": null}
+{"index": 105, "time": 300, "program": null}
+{"index": 106, "time": 300, "program": null}
+{"index": 107, "time": 300, "program": null}
+{"index": 108, "time": 300, "program": null}
+{"index": 109, "time": 300, "program": null}
+{"index": 110, "time": 300, "program": null}

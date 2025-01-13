@@ -1,0 +1,62 @@
+{
+    "name": "benchmark34",
+    "schema": {
+        "input": {
+            "_id": "INT",
+            "final": "INT",
+            "labs": "INT_ARRAY",
+            "midterm": "INT",
+            "quizzes": "INT_ARRAY"
+        },
+        "output": {
+            "_id": "INT",
+            "labAvg": "DOUBLE",
+            "quizAvg": "DOUBLE"
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": 1,
+                    "final": 80,
+                    "labs": [5, 8],
+                    "midterm": 75,
+                    "quizzes": [10, 6, 7]
+                },
+                {
+                    "_id": 2,
+                    "final": 95,
+                    "labs": [8, 8],
+                    "midterm": 80,
+                    "quizzes": [9, 10]
+                },
+                {
+                    "_id": 3,
+                    "final": 78,
+                    "labs": [6, 5],
+                    "midterm": 70,
+                    "quizzes": [4, 5, 5]
+                }
+            ],
+            "output": [
+                {
+                    "_id": 1,
+                    "labAvg": 6.5,
+                    "quizAvg": 7.666666666666667
+                },
+                {
+                    "_id": 2,
+                    "labAvg": 8.0,
+                    "quizAvg": 9.5
+                },
+                {
+                    "_id": 3,
+                    "labAvg": 5.5,
+                    "quizAvg": 4.666666666666667
+                }
+            ]
+        }
+    ]
+}

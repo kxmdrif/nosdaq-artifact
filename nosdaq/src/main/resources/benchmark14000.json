@@ -1,0 +1,1 @@
+{"name": "benchmark14000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": "645adfcf452474023d99b1b3", "province": "BC"}], "output": [{"_id": "BC", "count": 1}]}, {"input": [{"_id": "645adfcf452474023d99b1b8", "province": "BC"}], "output": [{"_id": "BC", "count": 1}]}]}

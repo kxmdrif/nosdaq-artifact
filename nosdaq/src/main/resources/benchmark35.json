@@ -1,0 +1,59 @@
+{
+    "name": "benchmark35",
+    "schema": {
+        "input": {
+            "_id": "INT",
+            "value": "DOUBLE"
+        },
+        "output": {
+            "_id": "INT",
+            "value": "DOUBLE",
+            "ceilingValue": "INT"
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": 1,
+                    "value": 9.25
+                },
+                {
+                    "_id": 2,
+                    "value": 8.73
+                },
+                {
+                    "_id": 3,
+                    "value": 4.32
+                },
+                {
+                    "_id": 4,
+                    "value": -5.34
+                }
+            ],
+            "output": [
+                {
+                    "_id": 1,
+                    "ceilingValue": 10.0,
+                    "value": 9.25
+                },
+                {
+                    "_id": 2,
+                    "ceilingValue": 9.0,
+                    "value": 8.73
+                },
+                {
+                    "_id": 3,
+                    "ceilingValue": 5.0,
+                    "value": 4.32
+                },
+                {
+                    "_id": 4,
+                    "ceilingValue": -5.0,
+                    "value": -5.34
+                }
+            ]
+        }
+    ]
+}

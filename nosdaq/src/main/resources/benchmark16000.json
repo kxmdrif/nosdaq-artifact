@@ -1,0 +1,1 @@
+{"name": "benchmark16000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "item": "abc", "price": 10, "quantity": 2, "date": {"$date": "2014-01-01T16:00:00Z"}}], "output": [{"_id": null, "minPrice": 10}]}, {"input": [{"_id": 7, "item": "abc", "price": 11, "quantity": 10, "date": {"$date": "2014-02-15T16:00:00Z"}}], "output": [{"_id": null, "minPrice": 11}]}]}

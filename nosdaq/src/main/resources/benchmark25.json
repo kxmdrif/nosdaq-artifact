@@ -1,0 +1,80 @@
+{
+  "name": "benchmark25",
+  "schema": {
+    "input": {
+      "_id": "INT",
+      "author": "STRING",
+      "post": "STRING"
+    },
+    "output": {
+      "_id": "INT",
+      "author": "STRING",
+      "post": "STRING"
+    }
+  },
+  "constants": [""],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": 1,
+          "author": "me",
+          "post": ""
+        },
+        {
+          "_id": 2,
+          "author": "you",
+          "post": "how to query"
+        }
+      ],
+      "output": [
+        {
+          "_id": 2,
+          "author": "you",
+          "post": "how to query"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": 2,
+          "author": "you",
+          "post": "how to query"
+        },
+        {
+          "_id": 3,
+          "author": "me",
+          "post": "m"
+        }
+      ],
+      "output": [
+        {
+          "_id": 2,
+          "author": "you",
+          "post": "how to query"
+        },
+        {
+          "_id": 3,
+          "author": "me",
+          "post": "m"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": 4,
+          "author": "me",
+          "post": ""
+        },
+        {
+          "_id": 5,
+          "author": "you",
+          "post": ""
+        }
+      ],
+      "output": []
+    }
+  ]
+}

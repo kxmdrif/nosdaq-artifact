@@ -1,0 +1,10 @@
+All double values should contain a dot in examples otherwise it will be extracted as int and this will cause errors
+
+To filter by array size = 0, need to provide constant 0.
+
+Foreign schemas should be written explicitly in the benchmark json file
+
+In some cases, larger collections can lead to less time and synthesize a undesired one.
+These cases usually group something and filter by count/sum > xxx. When increasing collections,
+these count/sum also increases and makes the predicate unnecessary (because we disable the requirement of having MATCH in size experiment mode)
+If we enable this MATCH check, 12001 will fail

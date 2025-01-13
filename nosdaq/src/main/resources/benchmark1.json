@@ -1,0 +1,89 @@
+{
+  "name": "benchmark1",
+  "schema": {
+    "input": {
+      "_id": "STRING",
+      "name": "STRING",
+      "type": "STRING_ARRAY"
+    },
+    "output": {
+      "name": "STRING"
+    }
+  },
+  "constants": ["2"],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "645d1c47e7bc6975168e2f7f",
+          "name": "apple",
+          "type": [
+            "Granny smith",
+            "Fuji"
+          ]
+        },
+        {
+          "_id": "645d1c47e7bc6975168e2f80",
+          "name": "grape",
+          "type": [
+            "green",
+            "black"
+          ]
+        },
+        {
+          "_id": "645d1c47e7bc6975168e2f81",
+          "name": "orange",
+          "type": [
+            "navel"
+          ]
+        }
+      ],
+      "output": [
+        {
+          "name": "apple"
+        },
+        {
+          "name": "grape"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d1c47e7bc6975168e2f82",
+          "name": "apple",
+          "type": [
+            "Granny smith",
+            "Fuji",
+            "Gala"
+          ]
+        },
+        {
+          "_id": "645d1c47e7bc6975168e2f83",
+          "name": "melon",
+          "type": [
+            "Cantaloupe",
+            "Honeydew"
+          ]
+        }
+      ],
+      "output": [
+        {
+          "name": "melon"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d1c47e7bc6975168e2f84",
+          "name": "strawberry",
+          "type": [
+            "Alpine"
+          ]
+        }
+      ],
+      "output": []
+    }
+  ]
+}

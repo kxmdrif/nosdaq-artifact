@@ -1,0 +1,15 @@
+services:
+  nosdaq:
+    container_name: nosdaq
+    build: .
+    tty: true
+    network_mode: "host"
+    volumes:
+      - ${HOST_DIR}:/nosdaq/result:rw
+      - ${HOST_DIR_SIZE_IMPACT}:/nosdaq/result_size_impact:rw
+  mongo:
+    container_name: nosdaq-mongodb
+    image: mongo:7.0.12-jammy
+    restart: always
+    ports:
+      - "27017:27017"

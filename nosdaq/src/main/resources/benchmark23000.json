@@ -1,0 +1,1 @@
+{"name": "benchmark23000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "fn": "sagar", "ln": "Varpe"}], "output": [{"_id": 1, "fn": "sagar", "ln": "Varpe"}]}, {"input": [{"_id": 5, "fn": "sag", "ln": "ln3"}], "output": [{"_id": 5, "fn": "sag", "ln": "ln3"}]}, {"input": [{"_id": 7, "fn": "sag", "score": "1"}], "output": []}]}

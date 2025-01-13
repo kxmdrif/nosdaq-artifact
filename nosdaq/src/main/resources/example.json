@@ -1,0 +1,30 @@
+{
+  "name": "benchmark0",
+  "schema": {
+    "input": {
+      "a": "INT"
+    },
+    "output": {
+      "a":"INT"
+    },
+    "foreign": {
+      "f1": {
+        "c": "INT"
+      },
+      "f2": {
+        "d": "INT"
+      }
+    }
+  },
+  "constants": ["1"],
+  "examples": [
+    {
+      "input": [],
+      "output": [],
+      "foreign": {
+        "f1": [],
+        "f2": []
+      }
+    }
+  ]
+}

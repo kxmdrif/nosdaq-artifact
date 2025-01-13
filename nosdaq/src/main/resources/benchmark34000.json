@@ -1,0 +1,1 @@
+{"name": "benchmark34000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "final": 80, "labs": [5, 8], "midterm": 75, "quizzes": [10, 6, 7]}], "output": [{"_id": 1, "quizAvg": 7.666666666666667, "labAvg": 6.5}]}]}

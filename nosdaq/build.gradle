@@ -1,0 +1,71 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+application {
+    mainClass = 'nosdaq.Main'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': application.mainClass
+        )
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+        resources {
+            srcDirs = ['src/test/resources']
+        }
+    }
+}
+
+
+
+tasks.named('test', Test) {
+    println("task: test")
+    useJUnitPlatform()
+    maxHeapSize = '10240m'
+    testLogging {
+        events "passed"
+        events "failed"
+        exceptionFormat "short"
+        showExceptions true
+        filter {
+            includeTestsMatching "*.AbstSynthesizerTest*"
+        }
+    }
+}
+
+//tasks.withType(Test) {
+//    enabled = false
+//}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation fileTree(dir: 'lib', include: {'*.jar'})
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+}

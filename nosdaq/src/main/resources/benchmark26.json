@@ -1,0 +1,87 @@
+{
+  "name": "benchmark26",
+  "schema": {
+    "input": {
+      "_id": "OBJECT_ID",
+      "carrier": "OBJECT",
+      "carrier.name": "STRING",
+      "carrier.fee": "INT",
+      "item": "STRING",
+      "quantity": "INT"
+    },
+    "output": {
+      "_id": "OBJECT_ID",
+      "carrier": "OBJECT",
+      "carrier.name": "STRING",
+      "carrier.fee": "INT",
+      "item": "STRING",
+      "quantity": "INT"
+    }
+  },
+  "constants": [
+    "20"
+  ],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": {
+            "$oid": "65cebe41c680030b7ee9a87d"
+          },
+          "carrier": {
+            "name": "Shipit",
+            "fee": 3
+          },
+          "item": "nuts",
+          "quantity": 30
+        },
+        {
+          "_id": {
+            "$oid": "65cebe41c680030b7ee9a87e"
+          },
+          "carrier": {
+            "name": "Shipit",
+            "fee": 4
+          },
+          "item": "bolts",
+          "quantity": 50
+        },
+        {
+          "_id": {
+            "$oid": "65cebe41c680030b7ee9a87f"
+          },
+          "carrier": {
+            "name": "Shipit",
+            "fee": 1
+          },
+          "item": "washers",
+          "quantity": 10
+        }
+      ],
+      "output": [
+        {
+          "_id": {
+            "$oid": "65cebe41c680030b7ee9a87d"
+          },
+          "carrier": {
+            "name": "Shipit",
+            "fee": 3
+          },
+          "item": "nuts",
+          "quantity": 30
+        },
+        {
+          "_id": {
+            "$oid": "65cebe41c680030b7ee9a87e"
+          },
+          "carrier": {
+            "name": "Shipit",
+            "fee": 4
+          },
+          "item": "bolts",
+          "quantity": 50
+        }
+      ]
+    }
+  ]
+}

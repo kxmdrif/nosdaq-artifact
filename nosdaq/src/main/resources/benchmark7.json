@@ -1,0 +1,82 @@
+{
+  "name": "benchmark7",
+  "schema": {
+    "input": {
+      "_id": "STRING",
+      "item": "STRING",
+      "qty": "INT"
+    },
+    "output": {
+      "item": "STRING"
+    }
+  },
+  "constants": [],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "645d366ee7bc6975168e2fb6",
+          "item": "large box",
+          "qty": 20
+        },
+        {
+          "_id": "645d366ee7bc6975168e2fb7",
+          "item": "small box",
+          "qty": 55
+        },
+        {
+          "_id": "645d366ee7bc6975168e2fb8",
+          "item": "medium box",
+          "qty": 30
+        }
+      ],
+      "output": [
+        {
+          "item": "large box"
+        },
+        {
+          "item": "small box"
+        },
+        {
+          "item": "medium box"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d366ee7bc6975168e2fb6",
+          "item": "large box",
+          "qty": 20
+        },
+        {
+          "_id": "645d366ee7bc6975168e2fb7",
+          "item": "small box",
+          "qty": 55
+        }
+      ],
+      "output": [
+        {
+          "item": "large box"
+        },
+        {
+          "item": "small box"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d366ee7bc6975168e2fb9",
+          "item": "extra medium box",
+          "qty": 10
+        }
+      ],
+      "output": [
+        {
+          "item": "extra medium box"
+        }
+      ]
+    }
+  ]
+}

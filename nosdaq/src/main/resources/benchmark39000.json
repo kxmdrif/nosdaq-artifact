@@ -1,0 +1,1 @@
+{"name": "benchmark39000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "specs": {"doors": 4, "wheels": 4}, "type": "car"}], "output": [{"_id": 1, "specs": {"doors": 4, "wheels": 4}, "type": "car", "sub_abs": 0}]}]}

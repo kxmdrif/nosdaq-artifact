@@ -1,0 +1,44 @@
+{
+    "name": "benchmark38",
+    "schema": {
+        "input": {
+            "_id": "INT",
+            "city": "STRING",
+            "hours": "INT",
+            "tasks": "INT"
+        },
+        "output": {
+            "_id": "INT",
+            "remainder": "INT"
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": 1,
+                    "city": "New York",
+                    "hours": 80,
+                    "tasks": 7
+                },
+                {
+                    "_id": 2,
+                    "city": "Singapore",
+                    "hours": 40,
+                    "tasks": 4
+                }
+            ],
+            "output": [
+                {
+                    "_id": 1,
+                    "remainder": 3
+                },
+                {
+                    "_id": 2,
+                    "remainder": 0
+                }
+            ]
+        }
+    ]
+}

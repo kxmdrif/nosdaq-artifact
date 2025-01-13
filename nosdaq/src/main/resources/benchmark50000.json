@@ -1,0 +1,1 @@
+{"name": "benchmark50000", "schema": {}, "constants": ["15", "in", "D"], "examples": [{"input": [{"_id": {"$oid": "65d01e5d23c4790382c924f0"}, "item": "journal", "qty": 25, "size": {"h": 14.0, "w": 21.0, "uom": "cm"}, "status": "A"}], "output": []}]}

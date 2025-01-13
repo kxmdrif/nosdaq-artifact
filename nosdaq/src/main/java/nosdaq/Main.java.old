@@ -1,0 +1,54 @@
+package nosdaq;
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        String startSymbol = "Q";
+        Set<String> nonTerminalSymbols = new HashSet<>();
+        nonTerminalSymbols.add("Q");
+        nonTerminalSymbols.add("∅");
+        nonTerminalSymbols.add("E");
+        nonTerminalSymbols.add("⊗");
+        nonTerminalSymbols.add("S");
+        nonTerminalSymbols.add("⊙");
+        nonTerminalSymbols.add("⊛");
+        nonTerminalSymbols.add("L");
+
+        // Will move this to ProductionRule class
+        Map<String, List<String>> productions = new HashMap<>();
+        productions.put("Q", Arrays.asList("find(∅, [L])", "aggregate([S])"));
+        productions.put("∅", Arrays.asList("true", "false", "E ⊗ E", "in(E, E)", "∅ /\\ ∅", "∅ \\/ ∅", "¬∅", "elemMatch(attr, ∅)", "allMatch(attr, ∅)", "exists(ap)"));
+        productions.put("E", Arrays.asList("ap", "Value", "Null", "ISODate", "size(ap)", "type(ap)", "substr(E, E, E)", "filter(E, ∅, E, E)", "⊙(E)", "E ⊛ E"));
+        productions.put("⊗", Arrays.asList(">=", ">", "<=", "<", "==", "!="));
+        productions.put("S", Arrays.asList("count(attr)", "match(∅)", "project(L, L, vec{attr})", "group(L, L, vec{attr})", "unwind(ap)", "sort(L, L)", "skip(E)", "limit(E)", "S, S"));
+        productions.put("⊙", Arrays.asList("abs", "ceil", "min", "max", "avg", "sum", "count"));
+        productions.put("⊛", Arrays.asList("+", "-", "x", "/", "%"));
+        productions.put("L", Arrays.asList("L, L", "E"));
+
+        Set<String> visitedSymbols = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.add(startSymbol);
+
+        while (!queue.isEmpty()) {
+            String symbol = queue.poll();
+            if (!visitedSymbols.contains(symbol)) {
+                visitedSymbols.add(symbol);
+                boolean check = false;
+                for (String s : nonTerminalSymbols) {
+                    if (symbol.contains(s)) {
+                        check = true;
+                        List<String> production = productions.getOrDefault(s, Collections.emptyList());
+                        for (String t : production) {
+                            queue.add(symbol.replace(s, t));
+                        }
+                    }
+                }
+
+                if (!check) {
+                    System.out.println(symbol);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"name": "benchmark26000", "schema": {}, "constants": ["20"], "examples": [{"input": [{"_id": {"$oid": "65cebe41c680030b7ee9a87d"}, "carrier": {"name": "Shipit", "fee": 3}, "item": "nuts", "quantity": 30}], "output": [{"_id": {"$oid": "65cebe41c680030b7ee9a87d"}, "carrier": {"name": "Shipit", "fee": 3}, "item": "nuts", "quantity": 30}]}]}

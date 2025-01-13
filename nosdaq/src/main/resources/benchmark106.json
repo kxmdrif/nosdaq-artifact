@@ -1,0 +1,110 @@
+{
+  "name": "benchmark106",
+  "schema": {},
+  "constants": ["124"],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "1319076251483734018",
+          "text": "We're just days away from the end of the election. Help us bring it home by donating $20 today:… https://t.co/OAzXOecJyB",
+          "truncated": true,
+          "entities": {
+            "urls": [
+              {
+                "url": "https://t.co/OAzXOecJyB",
+                "expanded_url": "https://twitter.com/i/web/status/1319076251483734018",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [
+                  97,
+                  120
+                ]
+              }
+            ]
+          },
+          "source": "<a href=\"https://studio.twitter.com\" rel=\"nofollow\">Twitter Media Studio</a>",
+          "user": {
+            "id": 30354991,
+            "id_str": "30354991",
+            "name": "Kamala Harris",
+            "screen_name": "KamalaHarris",
+            "location": "California",
+            "description": "U.S. Senator and Democratic candidate for Vice President of the United States. Wife, Momala, Auntie. Fighting for the people. She/her.",
+            "url": "https://t.co/EyPkJSnNLw",
+            "entities": {
+              "url": {
+                "urls": [
+                  {
+                    "url": "https://t.co/EyPkJSnNLw",
+                    "expanded_url": "https://joebiden.com",
+                    "display_url": "joebiden.com",
+                    "indices": [
+                      0,
+                      23
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "_id": "1319058351431581697",
+          "text": "545 children. \n\nThis is outrageous and a stain on our national character. Families belong together. \nhttps://t.co/VsimNG653X",
+          "truncated": false,
+          "entities": {
+            "urls": [
+              {
+                "url": "https://t.co/VsimNG653X",
+                "expanded_url": "https://www.nbcnews.com/politics/immigration/lawyers-say-they-can-t-find-parents-545-migrant-children-n1244066",
+                "display_url": "nbcnews.com/politics/immig…",
+                "indices": [
+                  101,
+                  124
+                ]
+              }
+            ]
+          },
+          "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+          "user": {
+            "id": 30354991,
+            "id_str": "30354991",
+            "name": "Kamala Harris",
+            "screen_name": "KamalaHarris",
+            "location": "California",
+            "description": "U.S. Senator and Democratic candidate for Vice President of the United States. Wife, Momala, Auntie. Fighting for the people. She/her.",
+            "url": "https://t.co/EyPkJSnNLw",
+            "entities": {
+              "url": {
+                "urls": [
+                  {
+                    "url": "https://t.co/EyPkJSnNLw",
+                    "expanded_url": "https://joebiden.com",
+                    "display_url": "joebiden.com",
+                    "indices": [
+                      0,
+                      23
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "output": [
+        {
+          "entities_urls": {
+            "display_url": "nbcnews.com/politics/immig…",
+            "expanded_url": "https://www.nbcnews.com/politics/immigration/lawyers-say-they-can-t-find-parents-545-migrant-children-n1244066",
+            "indices": [
+              101,
+              124
+            ],
+            "url": "https://t.co/VsimNG653X"
+          }
+        }
+      ]
+    }
+  ]
+}

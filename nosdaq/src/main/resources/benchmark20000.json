@@ -1,0 +1,1 @@
+{"name": "benchmark20000", "schema": {}, "constants": ["1"], "examples": [{"input": [{"_id": "645b050c452474023d99b1d1", "userId": "1", "name": "Brian"}], "output": []}, {"input": [{"_id": "645b050c452474023d99b1d1", "userId": "1", "name": "Brian"}], "output": []}, {"input": [{"_id": "645b050c452474023d99b1d1", "userId": "1", "name": "Brian"}], "output": []}]}

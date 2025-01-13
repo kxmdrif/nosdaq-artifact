@@ -1,0 +1,1 @@
+{"name": "benchmark31000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "endTemp": 80, "startTemp": 50}], "output": [{"_id": 1, "delta": 30}]}]}

@@ -1,0 +1,131 @@
+{
+    "name": "benchmark43",
+    "schema": {
+        "input": {
+            "_id": "INT",
+            "item": "STRING",
+            "price": "INT",
+            "quantity": "INT"
+        },
+        "output": {
+            "_id": "INT",
+            "item": "STRING",
+            "price": "INT",
+            "quantity": "INT",
+            "inventory_docs": "OBJECT_ARRAY",
+            "inventory_docs._id": "INT",
+            "inventory_docs.description": "STRING",
+            "inventory_docs.instock": "INT",
+            "inventory_docs.sku": "STRING"
+        },
+        "foreign": {
+            "benchmark43_inventory": {
+                "_id": "INT",
+                "description": "STRING",
+                "instock": "INT",
+                "sku": "STRING"
+            }
+        }
+    },
+    "constants": [],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": 1,
+                    "item": "almonds",
+                    "price": 12,
+                    "quantity": 2
+                },
+                {
+                    "_id": 2,
+                    "item": "pecans",
+                    "price": 20,
+                    "quantity": 1
+                },
+                {
+                    "_id": 3
+                }
+            ],
+            "output": [
+                {
+                    "_id": 1,
+                    "inventory_docs": [
+                        {
+                            "_id": 1,
+                            "sku": "almonds",
+                            "description": "product 1",
+                            "instock": 120
+                        }
+                    ],
+                    "item": "almonds",
+                    "price": 12,
+                    "quantity": 2
+                },
+                {
+                    "_id": 2,
+                    "inventory_docs": [
+                        {
+                            "_id": 4,
+                            "sku": "pecans",
+                            "description": "product 4",
+                            "instock": 70
+                        }
+                    ],
+                    "item": "pecans",
+                    "price": 20,
+                    "quantity": 1
+                },
+                {
+                    "_id": 3,
+                    "inventory_docs": [
+                        {
+                            "_id": 5,
+                            "sku": null,
+                            "description": "Incomplete"
+                        },
+                        {
+                            "_id": 6
+                        }
+                    ]
+                }
+            ],
+            "foreign": {
+                "benchmark43_inventory": [
+                    {
+                        "_id": 1,
+                        "description": "product 1",
+                        "instock": 120,
+                        "sku": "almonds"
+                    },
+                    {
+                        "_id": 2,
+                        "description": "product 2",
+                        "instock": 80,
+                        "sku": "bread"
+                    },
+                    {
+                        "_id": 3,
+                        "description": "product 3",
+                        "instock": 60,
+                        "sku": "cashews"
+                    },
+                    {
+                        "_id": 4,
+                        "description": "product 4",
+                        "instock": 70,
+                        "sku": "pecans"
+                    },
+                    {
+                        "_id": 5,
+                        "description": "Incomplete",
+                        "sku": null
+                    },
+                    {
+                        "_id": 6
+                    }
+                ]
+            }
+        }
+    ]
+}

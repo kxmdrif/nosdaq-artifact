@@ -1,0 +1,111 @@
+{
+    "name": "benchmark48",
+    "schema": {
+        "input": {
+            "_id": "OBJECT_ID",
+            "item": "STRING",
+            "qty": "INT",
+            "size": "OBJECT",
+            "size.h": "DOUBLE",
+            "size.w": "DOUBLE",
+            "size.uom": "STRING",
+            "status": "STRING"
+        },
+        "output": {
+            "_id": "OBJECT_ID",
+            "item": "STRING",
+            "qty": "INT",
+            "size": "OBJECT",
+            "size.h": "DOUBLE",
+            "size.w": "DOUBLE",
+            "size.uom": "STRING",
+            "status": "STRING"
+        }
+    },
+    "constants": ["A", "30"],
+    "examples": [
+        {
+            "input": [
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f0"},
+                    "item": "journal",
+                    "qty": 25,
+                    "size": {
+                        "h": 14.0,
+                        "w": 21.0,
+                        "uom": "cm"
+                    },
+                    "status": "A"
+                },
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f1"},
+                    "item": "notebook",
+                    "qty": 50,
+                    "size": {
+                        "h": 8.5,
+                        "w": 11.0,
+                        "uom": "in"
+                    },
+                    "status": "A"
+                },
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f2"},
+                    "item": "paper",
+                    "qty": 100,
+                    "size": {
+                        "h": 8.5,
+                        "w": 11.0,
+                        "uom": "in"
+                    },
+                    "status": "D"
+                },
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f3"},
+                    "item": "planner",
+                    "qty": 75,
+                    "size": {
+                        "h": 22.85,
+                        "w": 30.0,
+                        "uom": "cm"
+                    },
+                    "status": "D"
+                },
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f4"},
+                    "item": "postcard",
+                    "qty": 45,
+                    "size": {
+                        "h": 10.0,
+                        "w": 15.25,
+                        "uom": "cm"
+                    },
+                    "status": "A"
+                },
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f5"},
+                    "item": "journal",
+                    "qty": 25,
+                    "size": {
+                        "h": 14.0,
+                        "w": 21.0,
+                        "uom": "cm"
+                    },
+                    "status": "B"
+                }
+            ],
+            "output": [
+                {
+                    "_id": {"$oid": "65d01e5d23c4790382c924f0"},
+                    "item": "journal",
+                    "qty": 25,
+                    "size": {
+                        "h": 14.0,
+                        "w": 21.0,
+                        "uom": "cm"
+                    },
+                    "status": "A"
+                }
+            ]
+        }
+    ]
+}

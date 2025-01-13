@@ -1,0 +1,68 @@
+{
+  "name": "benchmark32",
+  "schema": {
+    "input": {
+      "_id": "INT",
+      "date": "DATE",
+      "fee": "INT",
+      "item": "STRING",
+      "price": "INT"
+    },
+    "output": {
+      "_id": "INT",
+      "item": "STRING",
+      "total": "INT"
+    }
+  },
+  "constants": [],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": 1,
+          "date": {
+            "$date": "2014-03-01T08:00:00.000Z"
+          },
+          "fee": 2,
+          "item": "abc",
+          "price": 10
+        },
+        {
+          "_id": 2,
+          "date": {
+            "$date": "2014-03-01T09:00:00.000Z"
+          },
+          "fee": 1,
+          "item": "jkl",
+          "price": 20
+        },
+        {
+          "_id": 3,
+          "date": {
+            "$date": "2014-03-15T09:00:00.000Z"
+          },
+          "fee": 0,
+          "item": "xyz",
+          "price": 5
+        }
+      ],
+      "output": [
+        {
+          "_id": 1,
+          "item": "abc",
+          "total": 12
+        },
+        {
+          "_id": 2,
+          "item": "jkl",
+          "total": 21
+        },
+        {
+          "_id": 3,
+          "item": "xyz",
+          "total": 5
+        }
+      ]
+    }
+  ]
+}

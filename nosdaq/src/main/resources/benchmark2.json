@@ -1,0 +1,129 @@
+{
+  "name": "benchmark2",
+  "schema": {
+    "input": {
+      "_id": "STRING",
+      "name": "STRING",
+      "cities": "OBJECT_ARRAY",
+      "cities.name": "STRING"
+    },
+    "output": {
+      "_id": "STRING",
+      "name": "STRING",
+      "cities": "OBJECT_ARRAY",
+      "cities.name": "STRING"
+    }
+  },
+  "constants": [],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "645d1e3be7bc6975168e2f85",
+          "name": "Spain",
+          "cities": [
+            {
+              "name": "Madrid"
+            },
+            {
+              "name": null
+            }
+          ]
+        },
+        {
+          "_id": "645d1e3be7bc6975168e2f86",
+          "name": "France"
+        },
+        {
+          "_id": "645d1e3be7bc6975168e2f87",
+          "name": "USA",
+          "cities": [
+            {
+              "name": "Boston"
+            }
+          ]
+        }
+      ],
+      "output": [
+        {
+          "_id": "645d1e3be7bc6975168e2f85",
+          "name": "Spain",
+          "cities": [
+            {
+              "name": "Madrid"
+            },
+            {
+              "name": null
+            }
+          ]
+        },
+        {
+          "_id": "645d1e3be7bc6975168e2f86",
+          "name": "France"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d1e3be7bc6975168e2f87",
+          "name": "Mexico",
+          "cities": [
+            {
+              "name": "Mexico City"
+            }
+          ]
+        },
+        {
+          "_id": "645d1e3be7bc6975168e2f88",
+          "name": "Canada",
+          "cities": [
+            {
+              "name": "Vancouver"
+            },
+            {
+              "name": null
+            }
+          ]
+        }
+      ],
+      "output": [
+        {
+          "_id": "645d1e3be7bc6975168e2f88",
+          "name": "Canada",
+          "cities": [
+            {
+              "name": "Vancouver"
+            },
+            {
+              "name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d1e3be7bc6975168e2f87",
+          "name": "Mexico",
+          "cities": [
+            {
+              "name": "Mexico City"
+            }
+          ]
+        },
+        {
+          "_id": "645d1e3be7bc6975168e2f89",
+          "name": "Germany"
+        }
+      ],
+      "output": [
+        {
+          "_id": "645d1e3be7bc6975168e2f89",
+          "name": "Germany"
+        }
+      ]
+    }
+  ]
+}

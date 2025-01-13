@@ -1,0 +1,1 @@
+{"name": "benchmark25000", "schema": {}, "constants": [""], "examples": [{"input": [{"_id": 1, "author": "me", "post": ""}], "output": []}, {"input": [{"_id": 2, "author": "you", "post": "how to query"}], "output": [{"_id": 2, "author": "you", "post": "how to query"}]}, {"input": [{"_id": 4, "author": "me", "post": ""}], "output": []}]}

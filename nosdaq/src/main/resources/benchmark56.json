@@ -1,0 +1,392 @@
+{
+  "name": "benchmark56",
+  "schema": {
+  },
+  "constants": [],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": {
+            "$oid": "5edfd7a9c7152c8e6c708482"
+          },
+          "host": "user1",
+          "analytics": {
+            "topic_count": [
+              {
+                "name": "Topic1",
+                "mentions": 12,
+                "duration": 160.94,
+                "percentage": 5.76
+              },
+              {
+                "name": "Topic4",
+                "mentions": 9,
+                "duration": 108.14,
+                "percentage": 3.87
+              },
+              {
+                "name": "Topic3",
+                "mentions": 3,
+                "duration": 48.52,
+                "percentage": 1.74
+              },
+              {
+                "name": "Topic2",
+                "mentions": 8,
+                "duration": 95.5,
+                "percentage": 3.42
+              },
+              {
+                "name": "Topic5",
+                "mentions": 2,
+                "duration": 2.43,
+                "percentage": 0.09
+              },
+              {
+                "name": "Topic6",
+                "mentions": 4,
+                "duration": 55.75,
+                "percentage": 1.99
+              },
+              {
+                "name": "Topic7",
+                "mentions": 4,
+                "duration": 53.33,
+                "percentage": 1.91
+              },
+              {
+                "name": "Topic8",
+                "mentions": 4,
+                "duration": 45.37,
+                "percentage": 1.62
+              }
+            ]
+          }
+        },
+        {
+          "_id": {
+            "$oid": "5edfd7a9c7152c8e6c708483"
+          },
+          "host": "user1",
+          "analytics": {
+            "topic_count": [
+              {
+                "name": "Topic1",
+                "mentions": 14,
+                "duration": 209.85,
+                "percentage": 7.13
+              },
+              {
+                "name": "Topic4",
+                "mentions": 9,
+                "duration": 97.27,
+                "percentage": 3.31
+              },
+              {
+                "name": "Topic3",
+                "mentions": 3,
+                "duration": 37.13,
+                "percentage": 1.26
+              },
+              {
+                "name": "Topic2",
+                "mentions": 4,
+                "duration": 52.46,
+                "percentage": 1.78
+              },
+              {
+                "name": "Topic5",
+                "mentions": 2,
+                "duration": 3.13,
+                "percentage": 0.11
+              },
+              {
+                "name": "Topic6",
+                "mentions": 4,
+                "duration": 34,
+                "percentage": 1.16
+              },
+              {
+                "name": "Topic7",
+                "mentions": 4,
+                "duration": 79.9,
+                "percentage": 2.72
+              },
+              {
+                "name": "Topic8",
+                "mentions": 4,
+                "duration": 87.45,
+                "percentage": 2.97
+              }
+            ]
+          }
+        },
+        {
+          "_id": {
+            "$oid": "5edfd7a9c7152c8e6c708484"
+          },
+          "host": "user1",
+          "analytics": {
+            "topic_count": [
+              {
+                "name": "Topic1",
+                "mentions": 12,
+                "duration": 165.19,
+                "percentage": 5.91
+              },
+              {
+                "name": "Topic4",
+                "mentions": 9,
+                "duration": 112.15,
+                "percentage": 4.01
+              },
+              {
+                "name": "Topic3",
+                "mentions": 3,
+                "duration": 29.28,
+                "percentage": 1.05
+              },
+              {
+                "name": "Topic2",
+                "mentions": 4,
+                "duration": 46.74,
+                "percentage": 1.67
+              },
+              {
+                "name": "Topic5",
+                "mentions": 3,
+                "duration": 2.7,
+                "percentage": 0.1
+              },
+              {
+                "name": "Topic6",
+                "mentions": 4,
+                "duration": 17.59,
+                "percentage": 0.63
+              },
+              {
+                "name": "Topic7",
+                "mentions": 4,
+                "duration": 62.34,
+                "percentage": 2.23
+              },
+              {
+                "name": "Topic8",
+                "mentions": 4,
+                "duration": 57.62,
+                "percentage": 2.06
+              }
+            ]
+          }
+        },
+        {
+          "_id": {
+            "$oid": "5edfd7a9c7152c8e6c708485"
+          },
+          "host": "user1",
+          "analytics": {
+            "topic_count": [
+              {
+                "name": "Topic1",
+                "mentions": 12,
+                "duration": 226.65,
+                "percentage": 6.04
+              },
+              {
+                "name": "Topic4",
+                "mentions": 9,
+                "duration": 139.59,
+                "percentage": 3.72
+              },
+              {
+                "name": "Topic3",
+                "mentions": 3,
+                "duration": 44.85,
+                "percentage": 1.2
+              },
+              {
+                "name": "Topic2",
+                "mentions": 4,
+                "duration": 69.18,
+                "percentage": 1.84
+              },
+              {
+                "name": "Topic5",
+                "mentions": 2,
+                "duration": 18.07,
+                "percentage": 0.48
+              },
+              {
+                "name": "Topic6",
+                "mentions": 4,
+                "duration": 63.9,
+                "percentage": 1.7
+              },
+              {
+                "name": "Topic7",
+                "mentions": 4,
+                "duration": 57.19,
+                "percentage": 1.52
+              },
+              {
+                "name": "Topic8",
+                "mentions": 4,
+                "duration": 60.42,
+                "percentage": 1.61
+              }
+            ]
+          }
+        },
+        {
+          "_id": {
+            "$oid": "5edfd7a9c7152c8e6c708486"
+          },
+          "host": "user1",
+          "analytics": {
+            "topic_count": [
+              {
+                "name": "Topic1",
+                "mentions": 12,
+                "duration": 181.99,
+                "percentage": 6.31
+              },
+              {
+                "name": "Topic4",
+                "mentions": 9,
+                "duration": 102.66,
+                "percentage": 3.56
+              },
+              {
+                "name": "Topic3",
+                "mentions": 3,
+                "duration": 33.21,
+                "percentage": 1.15
+              },
+              {
+                "name": "Topic2",
+                "mentions": 4,
+                "duration": 55.31,
+                "percentage": 1.92
+              },
+              {
+                "name": "Topic5",
+                "mentions": 5,
+                "duration": 9.24,
+                "percentage": 0.32
+              },
+              {
+                "name": "Topic6",
+                "mentions": 4,
+                "duration": 35.82,
+                "percentage": 1.24
+              },
+              {
+                "name": "Topic7",
+                "mentions": 4,
+                "duration": 72.24,
+                "percentage": 2.51
+              },
+              {
+                "name": "Topic8",
+                "mentions": 4,
+                "duration": 30.3,
+                "percentage": 1.05
+              }
+            ]
+          }
+        }
+      ],
+      "output": [
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic3"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 38.598
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic1"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 188.924
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic5"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 7.114
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic8"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 56.232000000000006
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic4"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 111.96199999999999
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic7"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 65.00
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic2"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 63.838
+        },
+        {
+          "_id": {
+            "analytics": {
+              "topic_count": {
+                "name": "Topic6"
+              }
+            },
+            "host": "user1"
+          },
+          "duration": 41.412
+        }
+      ]
+    }
+  ]
+}

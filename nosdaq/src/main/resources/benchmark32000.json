@@ -1,0 +1,1 @@
+{"name": "benchmark32000", "schema": {}, "constants": [], "examples": [{"input": [{"_id": 1, "date": {"$date": "2014-03-01T08:00:00Z"}, "fee": 2, "item": "abc", "price": 10}], "output": [{"_id": 1, "item": "abc", "total": 12}]}]}

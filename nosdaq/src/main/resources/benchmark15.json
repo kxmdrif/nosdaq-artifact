@@ -1,0 +1,156 @@
+{
+  "name": "benchmark15",
+  "schema": {
+    "input": {
+      "_id": "STRING",
+      "title": "STRING",
+      "author": "STRING",
+      "posted": "DATE",
+      "pageViews": "INT",
+      "tags": "STRING_ARRAY",
+      "comments": "OBJECT_ARRAY",
+      "comments.author": "STRING",
+      "comments.text": "STRING",
+      "other": "OBJECT",
+      "other.foo": "INT"
+    },
+    "output": {
+      "_id": "STRING",
+      "title": "STRING",
+      "author": "STRING",
+      "tags": "STRING"
+    }
+  },
+  "constants": [],
+  "examples": [
+    {
+      "input": [
+        {
+          "_id": "645d646a49aa0491bf346706",
+          "title": "this is my title",
+          "author": "bob",
+          "posted": {
+            "$date": "2023-05-12T04:55:54.131Z"
+          },
+          "pageViews": 5,
+          "tags": [
+            "fun",
+            "good",
+            "fun"
+          ],
+          "comments": [
+            {
+              "author": "joe",
+              "text": "this is cool"
+            },
+            {
+              "author": "sam",
+              "text": "this is bad"
+            }
+          ],
+          "other": {
+            "foo": 5
+          }
+        }
+      ],
+      "output": [
+        {
+          "_id": "645d646a49aa0491bf346706",
+          "title": "this is my title",
+          "author": "bob",
+          "tags": "fun"
+        },
+        {
+          "_id": "645d646a49aa0491bf346706",
+          "title": "this is my title",
+          "author": "bob",
+          "tags": "good"
+        },
+        {
+          "_id": "645d646a49aa0491bf346706",
+          "title": "this is my title",
+          "author": "bob",
+          "tags": "fun"
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "_id": "645d646a49aa0491bf346707",
+          "title": "this is my title",
+          "author": "bob",
+          "posted": {
+            "$date": "2023-05-12T04:55:54.131Z"
+          },
+          "pageViews": 5,
+          "tags": [
+            "fun"
+          ],
+          "comments": [
+            {
+              "author": "joe",
+              "text": "this is cool"
+            },
+            {
+              "author": "sam",
+              "text": "this is bad"
+            }
+          ],
+          "other": {
+            "foo": 5
+          }
+        },
+        {
+          "_id": "645d646a49aa0491bf346708",
+          "title": "Life of Pi",
+          "author": "Yann Martel",
+          "posted": {
+            "$date": "2001-09-12T04:55:54.131Z"
+          },
+          "pageViews": 5,
+          "tags": [
+            "fiction",
+            "adventure",
+            "classics"
+          ],
+          "comments": [
+            {
+              "author": "joe",
+              "text": "this is cool"
+            }
+          ],
+          "other": {
+            "foo": 5
+          }
+        }
+      ],
+      "output": [
+        {
+          "_id": "645d646a49aa0491bf346707",
+          "title": "this is my title",
+          "author": "bob",
+          "tags": "fun"
+        },
+        {
+          "_id": "645d646a49aa0491bf346708",
+          "title": "Life of Pi",
+          "author": "Yann Martel",
+          "tags": "fiction"
+        },
+        {
+          "_id": "645d646a49aa0491bf346708",
+          "title": "Life of Pi",
+          "author": "Yann Martel",
+          "tags": "adventure"
+        },
+        {
+          "_id": "645d646a49aa0491bf346708",
+          "title": "Life of Pi",
+          "author": "Yann Martel",
+          "tags": "classics"
+        }
+      ]
+    }
+  ]
+}
