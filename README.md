@@ -92,7 +92,7 @@ cd baselines/eusolver
 sudo apt install cmake
 pip3 install pyparsing z3-solver
 pip3 install -r requirements.txt
-./scripts/build.sh
+chmod +x scripts/build.sh && ./scripts/build.sh
 cd src
 python3 __main__.py
 ```
