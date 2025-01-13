@@ -33,6 +33,7 @@ gradle-app.setting
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 !com.microsoft.z3.jar
+!mongo-java-driver-3.12.14.jar
 
 # Cache of project
 .gradletasknamecache
