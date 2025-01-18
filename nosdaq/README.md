@@ -72,7 +72,7 @@ The result will be dumped in the file [baselines/eusolver/result.out](baselines/
 
 In our setting, the EUSolver experiments took **~1 hour**.
 
-### 4. Draw the cactus plot.
+### 5. Draw the cactus plot.
 
 Back to the project directory, and follow the instructions to get the plots
 in [fig-ablation-study.pdf](fig-ablation-study.pdf) and [fig-baseline.pdf](fig-baseline.pdf).
