@@ -2,10 +2,10 @@
 
 ## 1 Purpose
 - This artifact is used for the evaluation of paper *Synthesizing Document Database Queries using Collection Abstractions* in ICSE 2025.
-- The tool in this paper is called *Nosdaq* which is a program synthesizer for synthesizing MongoDB queries from input-output excamples.
+- The tool in this paper is called *Nosdaq* which is a program synthesizer for synthesizing MongoDB queries from input-output examples.
 - It contains 110 benchmarks of synthesizing MongoDB queries from four datasets: StackOverflow; MongoDB Official Doucumnet; Twitter API; Kaggle.
 - Badges to earn:
-  - **Available**: It is public accessable in Zenodo and there is link to access to it.
+  - **Available**: It is public accessible in Zenodo and there is link to access to it.
   - **Functional**: This artifact is documented for use. It can generate similar evaluation results as declared in the paper. It contains all components related to the paper. There are scripts to run the benchmarks and generate the results in the associated paper.
   - **Reusable**: Source code is provided so it can be reused and repurposed.
 ## 2 Provenience
