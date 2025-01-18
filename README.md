@@ -75,12 +75,12 @@ In each mode's folder contain three folders and three files:
 
 Depending on your hardware, this might take around **1 hour** or more or less.
 
-### 5.4 (OPTIONAL) Experiment for collection size impact on synthesis
+### 5.4 Experiment for collection size impact on synthesis
 In the same docker environment, run:
 ```bash
 python3 -m main --mode FULL --timeout 300 --experiment SIZE_IMPACT
 ```
-The result will be in the `result_size_impact/` folder. Depending on the hardware, this might take around **4 hours**  or more or less. If you want to save time, you can skip it.
+The result will be in the `result_size_impact/` folder. Depending on the hardware, this might take around **4 hours**  or more or less.
 
 ### 5.5 Run baseline experiments.
 Exit the docker environment (typing `exit` in the container's shell). In the host operating system **(will be the same for the following steps)**, run:

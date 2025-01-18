@@ -48,7 +48,7 @@ In each mode's folder contain three folders and three files:
 
 In our setting, those experiments took **~1 hour** in total.
 
-### 3. (OPTIONAL) Experiment for collection size impact on synthesis
+### 3. Experiment for collection size impact on synthesis
 
 ```bash
 python3 -m main --mode FULL --timeout 300 --experiment SIZE_IMPACT
