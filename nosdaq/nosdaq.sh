@@ -1,6 +1,7 @@
 #!/bin/bash
 # Get the current working directory
 CURRENT_DIR=$(pwd)
+export CURRENT_DIR
 
 # Define the desired directory path
 HOST_DIR="${CURRENT_DIR}/result"

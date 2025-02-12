@@ -11,24 +11,19 @@ WORKDIR /nosdaq
 
 RUN apt-get update && \
     apt-get install -y openjdk-17-jdk && \
-    apt-get install -y unzip gnupg curl
-    # apt install cmake && 
+    apt-get install -y unzip gnupg curl && \
+    apt-get install -y cmake python3-pip
 
 
-# RUN cd baselines/eusolver
-# RUN pip install -r requirements.txt
-# RUN ./script/build.sh
-# RUN cd /nosdaq
 
-#RUN curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
-#       gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
-#       --dearmor
-#
-#RUN echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-7.0.list
-#
-#RUN apt-get update
-#
-#RUN apt-get install -y mongodb-org=7.0.12 mongodb-org-database=7.0.12 mongodb-org-server=7.0.12 mongodb-mongosh=2.2.12 mongodb-org-mongos=7.0.12 mongodb-org-tools=7.0.12
+COPY baselines/eusolver ./baselines/eusolver
+COPY src/main/resources ./src/main/resources
+WORKDIR /nosdaq/baselines/eusolver
+RUN pip3 install pyparsing z3-solver
+RUN pip3 install -r requirements.txt
+RUN chmod +x scripts/build.sh && ./scripts/build.sh
+
+WORKDIR /nosdaq
 
 
 COPY --from=builder /nosdaq/build/libs/nosdaq-1.0-SNAPSHOT.jar .

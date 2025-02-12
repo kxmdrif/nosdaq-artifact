@@ -7,6 +7,7 @@ services:
     volumes:
       - ${HOST_DIR}:/nosdaq/result:rw
       - ${HOST_DIR_SIZE_IMPACT}:/nosdaq/result_size_impact:rw
+      - ${CURRENT_DIR}/baselines/eusolver/result.out:/nosdaq/baselines/eusolver/result.out:rw
   mongo:
     container_name: nosdaq-mongodb
     image: mongo:7.0.12-jammy

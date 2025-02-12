@@ -34,7 +34,7 @@ Our benchmarks are collected from four datasets
 - Z3 solver installed (for baseline).
 
 ## 5 Usage
-### 5.1 Install z3 if have not been installed
+<!-- ### 5.1 Install z3 if have not been installed
 ```bash
 sudo apt update
 sudo apt install unzip wget
@@ -44,9 +44,9 @@ unzip z3-4.12.2-x64-glibc-2.35.zip
 CURRENT_DIR=$(pwd)
 export Z3_HOME="${CURRENT_DIR}/z3-4.12.2-x64-glibc-2.35"
 export LD_LIBRARY_PATH="$Z3_HOME/bin:$LD_LIBRARY_PATH"
-```
+``` -->
 
-### 5.2 Build docker image
+### 5.1 Build docker image
 Download tha artifact and extract `nosdaq.zip` file. Then, under the `nosdaq` directory, run:
 
 ```bash
@@ -55,7 +55,7 @@ chmod +x nosdaq.sh && ./nosdaq.sh
 ```
 This might take around **5 minutes**. After finishing, you will automatically enter the docker environment.
 
-### 5.3 Run all the 110 benchmarks for the `Nosdaq` synthesizer and its related ablation studies
+### 5.2 Run all the 110 benchmarks for the `Nosdaq` synthesizer and its related ablation studies
 Now you are in a docker environment with the container's shell. Run:
 ```bash
 python3 -m main --mode FULL --timeout 300
@@ -75,37 +75,31 @@ In each mode's folder contain three folders and three files:
 
 Depending on your hardware, this might take around **1 hour** or more or less.
 
-### 5.4 Experiment for collection size impact on synthesis
+### 5.3 Experiment for collection size impact on synthesis
 In the same docker environment, run:
 ```bash
 python3 -m main --mode FULL --timeout 300 --experiment SIZE_IMPACT
 ```
 The result will be in the `result_size_impact/` folder. Depending on the hardware, this might take around **4 hours**  or more or less.
 
-### 5.5 Run baseline experiments.
-Exit the docker environment (typing `exit` in the container's shell). In the host operating system **(will be the same for the following steps)**, run:
-
-
+### 5.4 Run baseline experiments.
 ```bash
-# Firstly, please exit the docker environment by typing `exit` in the shell of docker
-cd baselines/eusolver
-sudo apt install cmake
-pip3 install pyparsing z3-solver
-pip3 install -r requirements.txt
-chmod +x scripts/build.sh && ./scripts/build.sh
-cd src
+cd baselines/eusolver/src
 python3 __main__.py
 ```
 
-The result will be dumped in the file `nosdaq/baselines/eusolver/result.out`.
+The result will be dumped in the file `baselines/eusolver/result.out`.
 
- Depending on the hardware, this might take around **1 hour**  or more or less.
+Depending on the hardware, this might take around **1 hour**  or more or less.
 
-### 5.6 Draw the plot for abation study, baseline and collection size impact
+### 5.5 Draw the plot for abation study, baseline and collection size impact
+Exit the docker environment (typing `exit` in the container's shell).
+
 Note:If you skipped the collection size impact experiment. You will not get related plot
 
-In the `nosdaq` directory, run
+ In the host operating system **(will be the same for the following steps)** and in the `nosdaq` directory, run
 ```bash
+# Firstly, please exit the docker environment by typing `exit` in the shell of docker
 pip3 install -r requirements.txt
 python3 plot.py
 ```
