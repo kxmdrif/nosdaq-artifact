@@ -133,7 +133,7 @@ The generated plot files are described as follows:
 
 
 
-### 5.7 Data Files
+### 5.6 Data Files
 The data files will be described as follows:
 
 |   Data Directory      | Related experiment |
@@ -146,8 +146,8 @@ The data files will be described as follows:
 The table in the paper can be obtained through the above data files.
 
 
-### 5.8 Customization
-#### 5.8.1 Parameters
+### 5.7 Customization
+#### 5.7.1 Parameters
 ```bash
 python3 -m main --mode [MODE] --timeout [TIMEOUT] --concurrency [CONCURRENCY] --experiment [EXPERIMENT]
 ```
@@ -163,7 +163,7 @@ python3 -m main --mode [MODE] --timeout [TIMEOUT] --concurrency [CONCURRENCY] --
   - `SIZE_IMPACT`: For each benchmark, run the corresponding 10 benchmarks whose collection size varies from 1 to 10
 
 
-#### 5.8.2 Run you own benchmarks
+#### 5.7.2 Run you own benchmarks
 1. Define your benchmark in the same format as the `benchmarkXX.json` files in the `src/main/resources`. Its name should be `benchmark[ID].json` format where `ID` is a number. Please note that the file name and the `name` field in the json should be the same.
 2. Put it into the `src/main/resources` and rebuild the docker image as section 5.1.
 3. In the `main.py`, edit the `MAIN_BID_LIST` global variable to specify the benchmark IDs you want to run. For example, `MAIN_BID_LIST = [1, 100]` means you will run `benchmark1` and `benchmark100`.
